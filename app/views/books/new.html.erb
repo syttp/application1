@@ -1,0 +1,16 @@
+<h1>Books</h1>
+<!-- form_for部分 -->
+<table>
+	<a class="show" href="/books">Show</a>
+	<a class="Edit" href="/books">Edit</a>
+	<a class="Destroy" href="/books">Destroy</a>
+</table>
+
+
+
+	<h2>New book</h2>
+	<h4>Title</h4>
+ 	<%= f.text_field :title %>
+ 	<h2>Body</h2>
+ 	<%= f.text_area :body %>
+ 	<%= f.submit 'Create book' %>
